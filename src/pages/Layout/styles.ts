@@ -1,5 +1,5 @@
 import styled from "styled-components"
 
 export const Layout = styled.main`
-    min-height: calc(100vh - 10rem);
+    min-height: calc(100vh - 11rem);
 `

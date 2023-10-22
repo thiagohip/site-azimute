@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,700;1,100&display=swap');
 
 *{
     margin: 0;
@@ -9,6 +10,17 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
+body{
+    background-color: #f9f9f9;
+}
+
+
 `
+
+
+export const colors = {
+    blue: "#062D54"
+}
