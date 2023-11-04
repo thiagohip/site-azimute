@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 export const NavBar = styled.nav`
 
+    overflow: hidden;
+
     section{
         gap: 40px;
         display: flex;

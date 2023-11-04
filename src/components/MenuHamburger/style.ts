@@ -5,6 +5,7 @@ interface MenuProps {
   }
 
   export const Menu = styled.div<MenuProps>`
+    display: none;
     position: absolute;
     width: 250px;
     height: 80%;
@@ -12,7 +13,6 @@ interface MenuProps {
     left: 100vw;
     bottom: 0;
     z-index: 5;
-    display: flex;
     background-color: #f9f9f9;
     transition: ease-in-out 0.2s;
     pointer-events: none;
@@ -53,6 +53,7 @@ interface MenuProps {
     }
     
     ${({isVisible}) => isVisible && css`
+        display: flex;
         left: calc(100vw - 250px);
         opacity: 1;
         pointer-events: auto;
