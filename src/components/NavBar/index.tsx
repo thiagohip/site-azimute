@@ -8,6 +8,9 @@ import {FiMenu} from "react-icons/fi"
 export const titulosSobre = ["Orientação", "Programa"];
 export const linksSobre = ["*", "*"]
 
+export const titulosArtigos = ["Notícias"];
+export const linksArtigos = ["http://localhost:5173/noticias"]
+
 export function NavBar(){
 
     const [menuIsVisible, setMenuIsVisible] = useState(false);
@@ -17,6 +20,7 @@ export function NavBar(){
             <section className="MenuNormal">
                 <ul className="Nav">
                     <Gaveta categoria="SOBRE" titulos={titulosSobre} links={linksSobre}/>
+                    <Gaveta categoria="ARTIGOS" titulos={titulosArtigos} links={linksArtigos}/>
                 </ul>
                 <button className="participe">PARTICIPE!</button>
             </section>

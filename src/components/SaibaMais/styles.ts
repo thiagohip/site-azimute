@@ -1,4 +1,4 @@
-import Orientista from "../../assets/Orientista.png"
+import Orientista from "../../img/Orientista.png"
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
 
@@ -14,6 +14,7 @@ export const SaibaM = styled.nav`
         list-style-type: none;
         width: 100%;
         li#titulo {
+            font-family: 'Passion One', sans-serif;
             border-bottom-style: solid;
             border-bottom-color: ${colors.azul};
             border-bottom-width: 0.3rem;
@@ -30,11 +31,13 @@ export const SaibaM = styled.nav`
             }
         }
         li nav#itens{
-            background-image: url("/Orientista.png");
+            font-family: 'Passion One', sans-serif;
+            background-image: url(${Orientista});
             display: flex;
             width: 100%;
             flex-direction: row;
             align-items: center;
+            flex-wrap: wrap;
             justify-content: center;
             padding: 4rem;
         }
@@ -74,7 +77,7 @@ export const Quadros = styled.nav`
                 }
             }
             li#Texto p {
-                font-family: "Passion One";
+                font-family: 'Passion One', sans-serif;
                 font-size: 2.5rem;
                 color: ${colors.branco};
                 padding: 1rem;
@@ -87,7 +90,7 @@ export const Quadros = styled.nav`
                     background-repeat: no-repeat;
                     background-position: top;
                     a {
-                        font-family: "Passion One";
+                        font-family: 'Passion One', sans-serif;
                         font-size: 2.5rem;
                         color: ${colors.branco};
                     }
@@ -95,18 +98,18 @@ export const Quadros = styled.nav`
             }
         }
         h2 {
-            font-family: "Passion One";
+            font-family: 'Passion One', sans-serif;
             font-size: 2.5rem;
             color: ${colors.branco};
         }
         li#nome h3{
             color: ${colors.azul};
-            font-family: "Passion One";
+            font-family: 'Passion One', sans-serif;
             font-size: 2rem;
         }
         li#email h3{
             color: ${colors.branco};
-            font-family: "Passion One";
+            font-family: 'Passion One', sans-serif;
             font-size: 1.5rem;
         }
         ul#Insta {
@@ -115,7 +118,7 @@ export const Quadros = styled.nav`
             flex-direction: row;
             h3 {
                 color: ${colors.branco};
-                font-family: "Passion One";
+                font-family: 'Passion One', sans-serif;
                 font-size: 2rem;
                 padding: 1rem;
             }

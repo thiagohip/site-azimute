@@ -1,6 +1,6 @@
 import * as S from "./styles"
-import Email from "../../assets/email.png"
-import Insta from "../../assets/insta.png"
+import Email from "../../img/email.png"
+import Insta from "../../img/insta.png"
 
 export function saiba_mais() {
   return (

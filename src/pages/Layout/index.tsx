@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { ComponentHeader, ComponentFooter } from "../../components"
+import { ComponentHeader, ComponentFooter, SaibaMais} from "../../components"
 import * as style from "./styles"
 
 export function Layout() {
@@ -11,6 +11,7 @@ export function Layout() {
       <style.Layout>
         <Outlet />
       </style.Layout>
+      <SaibaMais />
       <ComponentFooter />
     </>
   )
