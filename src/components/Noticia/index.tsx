@@ -1,11 +1,24 @@
 import * as s from "./style"
 
-export function Noticia(){
+export interface INoticia {
+    title: string
+    lead: string
+}
+
+
+
+export function Noticia({title, lead}: INoticia){
+
+    const link = title.replace(" ", '_').replace(',', '').replace('.', '')
+
 
     return(
         <s.Noticia>
-            <h1>“Título da notícia”</h1>
-            <p>Lead da notícia...</p>
+            <div>  
+                <h1>{title}</h1>
+                <p>{lead}</p>
+            </div>
+            <a href={link}><button className="ler_mais">Ler mais</button></a>
         </s.Noticia>
     )
 }
